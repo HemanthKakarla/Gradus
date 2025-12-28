@@ -1,12 +1,18 @@
 import Link from "next/link";
+import Card from "../../components/card";
 
-export default function Home() {
+
+export default function checkin() {
   return (
     <main>
-        <div className="center">
-            <div className="p-7 text-center">This is a Card</div>
-            <div className="flex justify-between text-center"><h1>No</h1><h1>No</h1></div>
-        </div>
+        <div >
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
     </main>
   );
 }

@@ -29,24 +29,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main>
-          <div className="center">
-            <nav className="navbar ">
-              <Link href="/">Home</Link>
-              <Link href="/checkin">Check-in</Link>
-              <Link href="/goals">My Goals</Link>
-              <Link href="/settings">Settings</Link>
-              <Link href="/about">About</Link>
-            </nav>
-          </div>
-          <div className="center pt-30">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </div>
+        <div className="center">
+          <nav className="navbar ">
+            <Link href="/">Home</Link>
+            <Link href="/checkin">Check-in</Link>
+            <Link href="/goals">My Goals</Link>
+            <Link href="/settings">Settings</Link>
+            <Link href="/about">About</Link>
+          </nav>
+        </div>
+        <main className="pt-30">
+          {children}
         </main>
         
       </body>
